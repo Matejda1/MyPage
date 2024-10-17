@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "navbar navbar"
+        "header header"
+        "section1 img"
+        "section3 section3"
+        "section4 section4"
+        "footer footer";
+}
+
+nav {
+    grid-area: navbar;
+}
+
+header {
+    grid-area: header;
+}
+
+.myImg {
+    grid-area: img;
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+#section3 {
+    grid-area: section3;
+    height: auto;
+}
+
+#section4 {
+    grid-area: section4;
+}
+
+footer {
+    margin-top: 5px;
+    grid-area: footer;
+    background-color: black;
+    height: 50px;
+    width: auto;
+}
+
+@media(max-width:850px) {
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "navbar"
+            "header"
+            "img"
+            "section1"
+            "section3"
+            "section4"
+            "footer";
+    }
+    .section{
+        height: auto;
+    }
+    .portfoliocontainer {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .portfoliocard{
+        margin-top: 10px;
+    }
+    form{
+        max-width: 600px;
+        width: auto;
+    }
+    button{
+        max-width: 600px;
+        width: auto;
+    }
+}
+@media(max-width: 600px){
+    form{
+        max-width: 400px;
+        width: auto;
+    }
+    button{
+        max-width: 400px;
+        width: auto;
+    }
+}
+@media(max-width: 400px){
+    form{
+        max-width: 200px;
+        width: auto;
+    }
+    button{
+        max-width: 200px;
+        width: auto;
+    }
+}

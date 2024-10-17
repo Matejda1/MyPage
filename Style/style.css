@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Ballo";
+    src: url(https://fonts.google.com/share?selection.family=Baloo+Paaji+2:wght@400..800);
+}
+
+.navlink {
+    font-weight: bold;
+}
+
+header {
+    background-image: url(https://i.pinimg.com/564x/14/db/04/14db04c315e07956ccd677be4ef63e16.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    width: 100%;
+}
+
+h2 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 65px;
+
+}
+
+h3 {
+    margin-top: 10px;
+    color: #001122;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    font-size: 100px;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.idk {
+    width: auto;
+    height: 600px;
+}
+
+.white {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.omnetext {
+    text-align: center;
+    position: relative;
+    top: 55%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.omnetext1 {
+    font-family: "Ballo";
+    font-size: 30px;
+    font-weight: medium;
+    color: #0D0B0B;
+    width: 1fr;
+    height: auto;
+}
+
+.linktext {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.omnelinks {
+    display: flex;
+    margin-top: 9px;
+
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linktoportfolio {
+    margin-left: 10px;
+}
+
+.omnelink1 {
+    background-color: #0D0C0C;
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.omnelink2 {
+    margin-left: 10px;
+    background-color: #222222;
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.omnelink1:hover{
+    scale: 1.2;
+}
+.omnelink2:hover{
+    scale: 1.2;
+}
+
+.myImg {
+    height: 600px;
+    width: 100%;
+    float: right;
+}
+
+.portfolioheading {
+    width: 100%;
+    height: 200px;
+}
+
+.portfolioheading1 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.portfoliocontainer {
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+.portfoliocenter {
+    margin: auto;
+}
+
+.buttonportfolio {
+    margin-top: 10px;
+    background-color: #222222;
+    height: 39px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.portfoliotext {
+    margin-top: 10px;
+    font-weight: medium;
+    color: #666666;
+}
+
+.portfolioall {
+    margin-left: 10px;
+    margin: auto;
+}
+.buttonportfolio:hover{
+    scale: 1.2;
+}
+
+.portfoliocard {
+    width: 1fr;
+    height: auto;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    box-shadow: 10px 10px 5px wheat;
+}
+
+.portfolioimg {
+    height: 240px;
+    width: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todolistimg {
+    width: 185px;
+}
+
+.portfolioimg1 {
+    height: 240px;
+    width: 1fr;
+}
+
+.formtext {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.input {
+    width: 1fr;
+    height: 40px;
+    background-color: #BBBBBB;
+    border: solid #888888;
+    border-radius: 10px;
+}
+
+form {
+    margin: auto;
+    width: 883px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-top: 5px;
+    width: 883px;
+    height: 40px;
+    border-radius: 8px;
+}
+.buttontext{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.kontaktsvg{
+    text-align: center;
+    margin-top: 5px;
+}
+.igsvg:hover{
+    fill: rgb(255, 98, 0);
+}
+.dissvg:hover{
+    fill: navy;
+}
+.mailsvg:hover{
+    fill: #6c6c6d;
+}
+.emailfooter{
+    color: white;
+}
+.footertext{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
