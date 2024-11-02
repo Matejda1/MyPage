@@ -40,6 +40,7 @@ nav svg {
     display: none;
 }
 
+/* max-width: 450px */
 @media(max-width: 450px) {
     .links-container {
         flex-direction: column;

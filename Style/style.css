@@ -33,6 +33,7 @@ a {
     text-decoration: none;
 }
 
+/* Nadpis */
 .heading {
     font-size: 100px;
     font-weight: bolder;
@@ -58,6 +59,7 @@ a {
     text-align: center;
 }
 
+/* O mne */
 .omnetext {
     text-align: center;
     position: relative;
@@ -115,10 +117,11 @@ a {
     border-radius: 8px;
 }
 
-.omnelink1:hover{
+.omnelink1:hover {
     scale: 1.2;
 }
-.omnelink2:hover{
+
+.omnelink2:hover {
     scale: 1.2;
 }
 
@@ -128,6 +131,7 @@ a {
     float: right;
 }
 
+/* Portfolio */
 .portfolioheading {
     width: 100%;
     height: 200px;
@@ -143,8 +147,11 @@ a {
 
 .portfoliocontainer {
     height: auto;
-    width: auto;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .portfoliocenter {
@@ -169,7 +176,8 @@ a {
     margin-left: 10px;
     margin: auto;
 }
-.buttonportfolio:hover{
+
+.buttonportfolio:hover {
     scale: 1.2;
 }
 
@@ -197,6 +205,7 @@ a {
     width: 1fr;
 }
 
+/* Kontakty */
 .formtext {
     font-size: 12px;
     font-weight: bold;
@@ -220,39 +229,37 @@ label {
     display: flex;
     flex-direction: column;
 }
-button{
+
+button {
     margin-top: 5px;
     width: 883px;
     height: 40px;
     border-radius: 8px;
+    background-color: #F0F0F0;
+    border: #000000 100%;
 }
-.buttontext{
+
+.buttontext {
     color: #000000;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-bottom: auto;
+    margin-top: auto;
 }
-.kontaktsvg{
+
+.kontaktsvg {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
-.igsvg:hover{
-    fill: rgb(255, 98, 0);
-}
-.dissvg:hover{
-    fill: navy;
-}
-.mailsvg:hover{
-    fill: #6c6c6d;
-}
-.emailfooter{
+
+/* Footer */
+.emailfooter {
     color: white;
 }
-.footertext{
+
+.footertext {
     color: white;
     text-align: center;
     position: relative;
