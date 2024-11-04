@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
 // Delay onClick wait 2 second and delete text in form
 async function refreshPage() {
     console.log("waiting");
-    await sleep(2)
+    await sleep(1)
     document.getElementById("myForm").reset();
 }
 async function sleep(seconds) {
