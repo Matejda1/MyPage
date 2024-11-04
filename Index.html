@@ -148,7 +148,7 @@
             <h2 class="portfolioheading1">Kontakty</h2>
         </div>
         <!-- === Kontaktní formulář === -->
-        <form method="POST" name="contact-form" id="myForm" onsubmit="clearInputField()">
+        <form method="POST" name="contact-form" id="myForm" onsubmit="refreshPage()">
             <label>
                 <p class="formtext">Celé jméno:</p>
                 <input class="input" type="text" name="name" required>
@@ -182,18 +182,7 @@
         </div>
     </footer>
     <!-- === JavaScript === -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeMMPBoUYkTrEPR3ZBPpkMBBQGShyQzv5nw4Q6JGaUEOvd1CbT3Bc2pHK7ZNfvBgRidA/exec'
-        const form = document.forms['contact-form']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-
+    <script src="./JavaScript/script.js"></script>
 </body>
 
 </html>
