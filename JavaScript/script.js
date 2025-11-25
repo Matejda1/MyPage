@@ -8,6 +8,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => console.log('Success!', response))
+        .then(response => document.getElementById("myForm").reset())
         .then(response => success.style.display = 'block')
         .catch(error => console.error('Error!', error.message))
         .catch(error => danger.style.display = 'block')
@@ -15,16 +16,32 @@ form.addEventListener('submit', e => {
     setTimeout(() => {
         danger.style.display = 'none';
         success.style.display = 'none';
-    }, 4000);
+    }, 15000);
 })
 
+// Age function
+const ageE = document.getElementById('age');
 
-// Delay onClick wait 2 second and delete text in form
-async function refreshPage() {
-    console.log("waiting");
-    await sleep(2.5)
-    document.getElementById("myForm").reset();
+function age() {
+    const d = new Date();
+    let day = d.getDate();
+    let month = d.getMonth();
+    let year = d.getFullYear();
+
+    let age = year - 2011;
+    if (month < 4) {
+        ageE.innerHTML = age - 1
+    } else if (month == 4) {
+        if (day < 10) {
+            ageE.innerHTML = age - 1
+        } else if (day == 10) {
+            ageE.innerHTML = age
+        } else if (day > 10) {
+            ageE.innerHTML = age
+        }
+    } else if (month > 4) {
+        ageE.innerHTML = age
+    }
 }
-async function sleep(seconds) {
-    return new Promise((resolve) => setTimeout(resolve, seconds * 1000))
-}
+
+age()
