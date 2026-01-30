@@ -45,3 +45,14 @@ function age() {
 }
 
 age()
+
+// Footer
+let fYearE = document.getElementById("fYear")
+
+function loadYear() {
+    let year = new Date().getFullYear();
+
+    fYearE.innerHTML = year
+}
+
+loadYear()
